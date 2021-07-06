@@ -14,7 +14,7 @@ async def on_message(message):
         return
 
     if message.content.startswith('~hello'):
-        await message.channel.send('Hello' + message.author + '! I\'m AurumBot!' )
+        await message.channel.send('Hello! I\'m AurumBot!' )
 
 keep_alive()
 client.run(os.environ['TOKEN'])
