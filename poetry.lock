@@ -67,6 +67,14 @@ optional = false
 python-versions = ">=2.7, !=3.0.*, !=3.1.*, !=3.2.*, !=3.3.*, !=3.4.*"
 
 [[package]]
+name = "command"
+version = "0.1.0"
+description = "Command runner with debug capabilities"
+category = "main"
+optional = false
+python-versions = "*"
+
+[[package]]
 name = "discord"
 version = "1.7.3"
 description = "A mirror package for discord.py. Please install that instead."
@@ -190,7 +198,7 @@ multidict = ">=4.0"
 [metadata]
 lock-version = "1.1"
 python-versions = "^3.8"
-content-hash = "c64c9cdf3a248ff71e8023f3cd5272bd0e0a273154fd7ddb5ad26824758d178b"
+content-hash = "50d73668ec6ac19f25183f971e3dc1480e72a95cb6303b9167c5475356f1aed4"
 
 [metadata.files]
 aiohttp = [
@@ -251,6 +259,9 @@ click = [
 colorama = [
     {file = "colorama-0.4.4-py2.py3-none-any.whl", hash = "sha256:9f47eda37229f68eee03b24b9748937c7dc3868f906e8ba69fbcbdd3bc5dc3e2"},
     {file = "colorama-0.4.4.tar.gz", hash = "sha256:5941b2b48a20143d2267e95b1c2a7603ce057ee39fd88e7329b0c292aa16869b"},
+]
+command = [
+    {file = "Command-0.1.0.tar.gz", hash = "sha256:825af5adb84df91a4130c3fd112df0b33fbbb8ae77b16c29d21c6eb655102bf0"},
 ]
 discord = [
     {file = "discord-1.7.3-py3-none-any.whl", hash = "sha256:248d728356e149c818a81b94659047a19305ea1623d4810bbb342f6b7df55f36"},
