@@ -6,9 +6,15 @@ authors = ["Your Name <you@example.com>"]
 
 [tool.poetry.dependencies]
 python = "^3.8"
-discord = "^1.7.3"
 Flask = "^2.0.1"
 Command = "^0.1.0"
+numpy = "^1.21.1"
+nextcord = "^2.0.0-alpha.3"
+pyinstrument = "^4.1.1"
+colorama = "^0.4.4"
+orjson = "^3.6.5"
+Pillow = "^8.4.0"
+image = "^1.5.33"
 
 [tool.poetry.dev-dependencies]
 

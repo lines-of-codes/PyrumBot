@@ -1,19 +1,28 @@
-from discord import Embed, Colour
+from nextcord import Embed, Colour
+from nextcord.ext import commands
+from ._utils import generate_command_info_embed
 
+help_embed = generate_command_info_embed(
+    "userinfo [Member]", "Find an Information about the Member.",
+    [
+        ("Member", "The target member.", False)
+    ]
+)
 
 def datetodatestring(indate):
     return f"{indate.day}/{indate.month}/{indate.year}"
 
 
-async def execute(message):
+@commands.command()
+async def userinfo(message):
     member = message.mentions
     if not member:
         member = message.author
     else:
         member = member[0]
-    info_embed = Embed(title=f"an Info about {member}:",
+    info_embed = Embed(title=f"Some Info about {member}:",
                        color=Colour.from_rgb(0, 255, 180))
-    info_embed.set_thumbnail(url=str(member.avatar_url))
+    info_embed.set_thumbnail(url=str(member.avatar.url))
     info_embed.add_field(name="Username", value=str(member), inline=True)
     info_embed.add_field(name="User ID", value=str(member.id))
     if message.author.nick != None:
